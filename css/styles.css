@@ -117,6 +117,7 @@ ul {
   text-align: center;
   padding: 1rem;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .form__element {
@@ -264,12 +265,13 @@ link:focus {
 
 .profile__flexbox--content {
   flex: 2;
-  min-width: 350px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .profile__flexbox--portrait {
   margin: 0 auto;
+  text-align: center;
 }
 
 .profile__portrait {
@@ -285,8 +287,6 @@ link:focus {
   display: flex;
   text-align: center;
   justify-content: space-around;
-
-  /* margin:30% 0 0 30%; */
 }
 
 .skills__table {
@@ -371,7 +371,12 @@ link:focus {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
-
+  .profile {
+    max-width: 100%;
+  }
+  .profile__flexbox{
+    flex-direction: column-reverse;
+  }
   h1 {
     font-size: 2rem;
   }
@@ -390,5 +395,15 @@ link:focus {
 
   .form__element textarea {
     flex: auto;
+  }
+  .profile__portrait {
+    margin: auto;
+  }
+
+  .page-header__item {
+    flex: 2;
+  }
+  .page-header__logo {
+    max-width: 200px;
   }
 }
