@@ -188,8 +188,6 @@ link:focus {
   flex-direction: column;
   text-align: center;
   background-color: var(--dark-background);
-
-  /* position: static; */
   width: 100%;
 
   /* bottom: 0; */
@@ -197,8 +195,6 @@ link:focus {
 
 .page-header {
   display: flex;
-
-  /* max-width: 1000px; */
   line-height: 1.5rem;
   background-color: var(--dark-background);
   justify-content: space-around;
@@ -396,10 +392,18 @@ link:focus {
   .form__element textarea {
     flex: auto;
   }
+
+  .profile {
+    padding: 0px;
+  }
+
   .profile__portrait {
     margin: auto;
   }
 
+  .page-header {
+    padding: 0px 30px 0px 20px;
+  }
   .page-header__item {
     flex: 2;
   }
