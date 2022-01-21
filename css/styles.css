@@ -222,6 +222,10 @@ link:focus {
   width: 33%;
 }
 
+.portfolio__img {
+ max-width: 100%; 
+}
+
 /* work-portfolio grid */
 @supports (display: grid) {
   .portfolio-grid {
@@ -232,7 +236,9 @@ link:focus {
   }
 
   .portfolio-grid__item {
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
     min-height: auto;
     margin: 0;
     background-color: var(--dark-background);
@@ -362,10 +368,15 @@ link:focus {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 720px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
+  }
+
+  .portfolio-grid__item {
+    width: 80vw;
+    margin: auto;
   }
   .profile {
     max-width: 100%;
