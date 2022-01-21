@@ -17,11 +17,11 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   background-color: var(--dark-blue-green);
   color: var(--off-white);
   margin: 0;
@@ -60,16 +60,16 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   line-height: 1.5rem;
 }
 
 .about ul {
   -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -ms-flex: 2;
+  flex: 2;
 }
 
 .about-portrait__container {
@@ -83,8 +83,8 @@ ul {
   max-width: 100%;
   height: auto;
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   border: 2px solid var(--dark-background);
 }
 
@@ -101,7 +101,7 @@ ul {
   padding: 10px;
   border-radius: 4px;
   -webkit-box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
@@ -144,9 +144,9 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 5px;
   margin: 10px;
 }
@@ -159,14 +159,14 @@ ul {
   border-radius: 5px;
   padding: 5px;
   -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+  -ms-flex: 4;
+  flex: 4;
 }
 
 .form__element label {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .form__element textarea {
@@ -218,8 +218,8 @@ link:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   background-color: var(--dark-background);
   width: 100%;
@@ -234,21 +234,21 @@ link:focus {
   line-height: 1.5rem;
   background-color: var(--dark-background);
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 100%;
   padding: 20px;
 }
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -263,6 +263,10 @@ link:focus {
   width: 33%;
 }
 
+.portfolio__img {
+  max-width: 100%;
+}
+
 /* work-portfolio grid */
 @supports (display: grid) {
   .portfolio-grid {
@@ -275,7 +279,14 @@ link:focus {
   }
 
   .portfolio-grid__item {
-    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 400px;
     min-height: auto;
     margin: 0;
     background-color: var(--dark-background);
@@ -301,16 +312,16 @@ link:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .profile__flexbox--content {
   -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -ms-flex: 2;
+  flex: 2;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -335,7 +346,7 @@ link:focus {
   display: flex;
   text-align: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .skills__table {
@@ -356,27 +367,27 @@ link:focus {
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
   -webkit-animation: 15s sunrise infinite alternate ease-in-out;
-          animation: 15s sunrise infinite alternate ease-in-out;
+  animation: 15s sunrise infinite alternate ease-in-out;
 }
 
 .cloud-front {
   -webkit-animation-duration: 30s;
-          animation-duration: 30s;
+  animation-duration: 30s;
   -webkit-animation-name: cloud-move;
-          animation-name: cloud-move;
+  animation-name: cloud-move;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @-webkit-keyframes color-change {
@@ -410,89 +421,94 @@ link:focus {
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
 @-webkit-keyframes sunrise {
   from {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   to {
     -webkit-transform: translate(0, 250px);
-            transform: translate(0, 250px);
+    transform: translate(0, 250px);
   }
 }
 
 @keyframes sunrise {
   from {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   to {
     -webkit-transform: translate(0, 250px);
-            transform: translate(0, 250px);
+    transform: translate(0, 250px);
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 720px) {
   .portfolio-grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
+  .portfolio-grid__item {
+    width: 80vw;
+    margin: auto;
+  }
   .profile {
     max-width: 100%;
   }
-  .profile__flexbox{
+  .profile__flexbox {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   h1 {
     font-size: 2rem;
@@ -509,14 +525,14 @@ link:focus {
   .form__element {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .form__element textarea {
     -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
+    -ms-flex: auto;
+    flex: auto;
   }
 
   .profile {
@@ -532,8 +548,8 @@ link:focus {
   }
   .page-header__item {
     -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    -ms-flex: 2;
+    flex: 2;
   }
   .page-header__logo {
     max-width: 200px;
