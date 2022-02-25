@@ -11,20 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./img/nos.ico" />
+    <!-- <link rel="shortcut icon" href="./img/nos.ico" /> -->
+    <link rel="shortcut icon" href="./img/R.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/styles.production.css" />
-    <script src="scripts/tota11y.min.js" defer></script>
+    <!-- <script src="scripts/tota11y.min.js" defer></script> -->
   </head>
 
   <body>
     <header class="page-header">
       <img
-        src="./img/logo.jpg"
+        src="./img/R.svg"
         alt="A personal logo for Raffaele Cataldo"
         class="page-header__item page-header__logo"
       />
@@ -66,35 +67,37 @@
       </nav>
     </header>
     <main>
-      <!-- <section> -->
-      <!--   <h1 class="content__centered">Contact Me</h1> -->
-      <!--   <form -->
-      <!--     action="mailto:raffaelecataldo.dev@gmail.com" -->
-      <!--     method="post" -->
-      <!--     enctype="text/plain" -->
-      <!--     id="contact-form" -->
-      <!--   > -->
-      <!-- <div class="form__element"> -->
-      <!--   <label class="standard-label" for="user-email">*E-mail: </label> -->
-      <!--   <input type="email" id="user-email" autofocus required /> -->
-      <!-- </div> -->
-      <!-- <div class="form__element"> -->
-      <!--   <label class="standard-label" for="user-telephone-number" -->
-      <!--     >Telephone: -->
-      <!--   </label> -->
-      <!--   <input type="tel" id="user-telephone-number" /> -->
-      <!-- </div> -->
-      <!-- <div class="form__element"> -->
-      <!--   <label class="standard-label" for="user-message">*Message: </label> -->
-      <!--   <textarea maxlength="240" id="user-message" required></textarea> -->
-      <!-- </div> -->
-      <!-- <div class="form__element"> -->
-      <!--   <button type="submit" value="Send message" class="button"> -->
-      <!--     Send Message -->
-      <!--   </button> -->
-      <!-- </div> -->
-      <!-- </form> -->
-      <!-- </section> -->
+      <section>
+        <h1 class="content__centered">Contact Me</h1>
+        <form
+          action="mailto:raffaelecataldo.dev@gmail.com"
+          data-netlify="true"
+          name="contact"
+          method="post"
+          enctype="text/plain"
+          id="contact-form"
+        >
+          <div class="form__element">
+            <label class="standard-label" for="user-email">*E-mail: </label>
+            <input type="email" id="user-email" autofocus required />
+          </div>
+          <div class="form__element">
+            <label class="standard-label" for="user-telephone-number"
+              >Telephone:
+            </label>
+            <input type="tel" id="user-telephone-number" />
+          </div>
+          <div class="form__element">
+            <label class="standard-label" for="user-message">*Message: </label>
+            <textarea maxlength="240" id="user-message" required></textarea>
+          </div>
+          <div class="form__element">
+            <button type="submit" value="Send message" class="button">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </section>
       <div class="content__centered" id="contact-form">
         <a href="mailto:raffaelecataldo.dev@gmail.com" class="link"
           >Contact me!</a
@@ -2183,12 +2186,17 @@
       <p>Find me on:</p>
       <div class="social-media">
         <a href="https://github.com/farmeroy" target="_blank"
-          ><img src="./img/github.svg" alt="github"
+          ><img
+            src="./img/gitCircleWhite.png"
+            alt="github"
+            class="social-media-img"
         /></a>
         <a href="https://www.linkedin.com/in/raffaele-cataldo-dev/">
-          <img src="./img/linkedin.svg" alt="linked in"
+          <img
+            src="./img/inCircleWhite.png"
+            class="social-media-img"
+            alt="linked in"
         /></a>
-        <img src="img/twitter.svg" alt="twitter" />
       </div>
     </footer>
   </body>

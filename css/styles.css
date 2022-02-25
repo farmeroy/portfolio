@@ -189,8 +189,7 @@ link:focus {
   text-align: center;
   background-color: var(--dark-background);
   width: 100%;
-
-  /* bottom: 0; */
+  position: absolute bottom ;
 }
 
 .page-header {
@@ -213,7 +212,7 @@ link:focus {
 
 .page-header__logo {
   max-width: 100%;
-  max-height: 75px;
+  max-height: 35px;
 }
 
 /* start grid fallback */
@@ -225,6 +224,14 @@ link:focus {
 .portfolio__img {
  max-width: 100%; 
 }
+
+.social-media {
+}
+
+.social-media-img {
+ height: 40px; 
+}
+
 
 /* work-portfolio grid */
 @supports (display: grid) {
@@ -261,6 +268,7 @@ link:focus {
 
 .profile__flexbox {
   display: flex;
+  min-height: 50vh;
   justify-content: space-between;
   flex-wrap: wrap;
 }
