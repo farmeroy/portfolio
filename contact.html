@@ -73,23 +73,33 @@
           data-netlify="true"
           netlify
           name="contact"
-          method="post"
-          type="text/plain"
+          method="POST"
           id="contact-form"
         >
           <div class="form__element">
             <label class="standard-label" for="user-email">*E-mail: </label>
-            <input type="email" id="user-email" autofocus required />
+            <input
+              type="email"
+              id="user-email"
+              name="email"
+              autofocus
+              required
+            />
           </div>
           <div class="form__element">
             <label class="standard-label" for="user-telephone-number"
               >Telephone:
             </label>
-            <input type="tel" id="user-telephone-number" />
+            <input type="tel" id="user-telephone-number" name="phone-number" />
           </div>
           <div class="form__element">
             <label class="standard-label" for="user-message">*Message: </label>
-            <textarea maxlength="240" id="user-message" required></textarea>
+            <textarea
+              maxlength="240"
+              id="user-message"
+              name="message"
+              required
+            ></textarea>
           </div>
           <div class="form__element">
             <button type="submit" value="Send message" class="button">
